@@ -574,7 +574,7 @@ a {
 }
 
 .info-detail {
-  background-color: green;
+/*   background-color: green; */
   color: #e6e6e6c7;
   padding: 20px;
   /* padding-left: 10px; */
@@ -612,7 +612,7 @@ a {
 .threat-types h1 {
   color: white;
   font-family: "Space Mono", sans-serif;
-  background-color: blueviolet;
+/*   background-color: blueviolet; */
   /* font-size: clamp(2em, 2vw, 4em); */
   /* font-size: clamp(3em, 3vw, 3em); */
   letter-spacing: -2px;
