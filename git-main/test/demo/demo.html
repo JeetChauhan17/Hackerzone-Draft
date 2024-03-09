@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+
+    <div id="cards">
+        <div class="card" data-attackType="fabrication" onclick="attk(this)">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-apartment"></i>
+            </div>
+            <div class="card-info-wrapper fabrication">
+              <div class="card-info">
+                <i class="fa-duotone fa-apartment"></i>
+                <div class="card-info-title">
+                  <h3>Fabrication</h3>  
+                  <h4>Pretending to be someone else</h4>
+                </div>    
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-attackType="modification" onclick="attk(this)">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-unicorn"></i>
+            </div>
+            <div class="card-info-wrapper modification">
+              <div class="card-info">
+                <i class="fa-duotone fa-unicorn"></i>
+                <div class="card-info-title">
+                  <h3>Modification</h3>  
+                  <h4>Changing of message</h4>
+                </div>    
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="card" data-attackType="replay" onclick="attk(this)">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-blender-phone"></i>
+            </div>
+            <div class="card-info-wrapper replay">
+              <div class="card-info">
+                <i class="fa-duotone fa-blender-phone"></i>
+                <div class="card-info-title">
+                  <h3>Replay</h3>  
+                  <h4>Capturing data for later use</h4>
+                </div>    
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-attackType="dos" onclick="attk(this)">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-person-to-portal"></i>
+            </div>
+            <div class="card-info-wrapper dos">
+              <div class="card-info">
+                <i class="fa-duotone fa-person-to-portal"></i>
+                <div class="card-info-title">
+                  <h3>DOS</h3>  
+                  <h4>Denial of Service</h4>
+                </div>    
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-attackType="release-of-content" onclick="attk(this)">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-person-from-portal"></i>
+            </div>
+            <div class="card-info-wrapper release of content">
+              <div class="card-info">
+                <i class="fa-duotone fa-person-from-portal"></i>
+                <div class="card-info-title">
+                  <h3>Release of Content</h3>  
+                  <h4>Publicising private data</h4>
+                </div>    
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-attackType="traffic-analysis" onclick="attk(this)">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-otter"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <i class="fa-duotone fa-otter"></i>
+                <div class="card-info-title">
+                  <h3>Traffic analysis</h3>  
+                  <h4>silent analysis for Dos attacks </h4>
+                </div>    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- <div class="main">
+
+        <button id="backbtn">back to selection</button>
+
+        <label for="sendertxt"></label>
+        <textarea name="sendertxt" id="sendertxt" cols="30" rows="10"></textarea>
+        
+        <label for="recievertxt"></label>
+        <textarea name="recievertxt" id="recievertxt" cols="30" rows="10"></textarea>
+        
+        <button id="submit" onclick="send()">Send</button>
+    
+    </div> -->
+    
+    <div class="main">
+        <button id="backbtn">back to selection</button>
+    
+        <div class="chat-box">
+            <div class="sender">
+                <img src="/media/sender.png" alt="Sender Avatar" class="avatar">
+                <span class="name">Sender Name</span>
+                <textarea name="sendertxt" id="sendertxt" cols="30" rows="10" placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="receiver">
+                <img src="/media/reciever.png" alt="Receiver Avatar" class="avatar">
+                <span class="name">Receiver Name</span>
+                <textarea name="recievertxt" id="recievertxt" cols="30" rows="10" placeholder="Type your message here..."></textarea>
+            </div>
+        </div>
+    
+        <button id="submit" onclick="send()">Send</button>
+    </div>
+    
+
+    <script src="demo.js"></script>
+</body>
+</html>

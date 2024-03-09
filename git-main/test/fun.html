@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+
+        <label for="sendertxt"></label>
+        <textarea name="sendertxt" id="sendertxt" cols="30" rows="10"></textarea>
+        <button id="sendbtn" onclick="sendtxt()">Send</button>
+        
+        <label for="recievertxt"></label>
+        <textarea name="recievertxt" id="recievertxt" cols="30" rows="10" readonly></textarea>
+    
+        <div id="intruderTextbox" style="display: none;">
+            <label for="intruderText">Intruder Text:</label><br>
+            <textarea id="intruderText" class="textbox" readonly></textarea><br>
+        </div>
+    </div>
+
+
+    <select name="attack" id="attacktype" onchange="updateattk()">
+        <option value="modification">modification</option>
+        <option value="fabrication">fabrication</option>
+<option value="replay">replay</option>
+<option value="dos">dos</option>
+
+</select>
+
+    <div class="attacktype">
+        <div class="modification"></div>
+        <div class="fabrication"></div>
+        <div class="replay"></div>
+        <div class="dos"></div>
+    </div>
+
+    <script src="fun.js"></script>
+</body>
+</html>

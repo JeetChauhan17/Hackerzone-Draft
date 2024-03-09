@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(10, 10, 10);
+    margin: 0;
+    pad: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    color: white;
+    width: fit-content;
+    height: fit-content;
+}
